@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture1</title>
+</head>
+<body>
+
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="lecture2.html">Next ⏭</a>
+  </nav>
+  <hr>
+ <h1>Lecture 1: Basic HTML Tags</h1>
+  <h2>What is HTML?</h2>
+  <p><b>HTML</b> stands for <b>HyperText Markup Language</b>. It is the standard language used to create and structure the content of a webpage.</p>
+
+  <ul>
+    <li><b>HyperText</b>: Links that connect web pages to each other.</li>
+    <li><b>Markup Language</b>: Uses tags to “mark up” content with meaning and structure.</li>
+  </ul>
+
+  <p>First Website: <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank" rel="noopener">Click here </a></p>
+
+  <h2>*Install Required Software</h2>
+  <ol>
+    <li>
+      Install <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>
+    </li>
+    <li>Install VS Code Extensions:
+      <ul>
+        <li>Live Preview</li>
+        <li>Prettier</li>
+        <li>Live Server</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>1. Headings</h2>
+  <p>Headings define titles and subtitles on your page, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+  <pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+...
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+  </pre>
+
+  <h2>2. Paragraphs</h2>
+  <pre>
+&lt;p&gt;This is the first paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+  </pre>
+
+  <h2>3. Horizontal Rule</h2>
+  <pre>
+&lt;p&gt;Topic One&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Topic Two&lt;/p&gt;
+  </pre>
+
+  <h2>4. Line Break</h2>
+  <pre>
+&lt;p&gt;221B Baker Street&lt;br&gt;London, England&lt;/p&gt;
+  </pre>
+
+  <h2>5. Lists</h2>
+  <p>Unordered list:</p>
+  <pre>
+&lt;ul&gt;
+  &lt;li&gt;Tea Bag&lt;/li&gt;
+  &lt;li&gt;Water&lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+
+  <p>Ordered list:</p>
+  <pre>
+&lt;ol&gt;
+  &lt;li&gt;Boil water&lt;/li&gt;
+  &lt;li&gt;Add tea bag&lt;/li&gt;
+&lt;/ol&gt;
+  </pre>
+
+  <h2>6. Anchor Tag</h2>
+  <pre>
+&lt;a href="https://www.coderarmy.in/" target="_blank"&gt;Visit Coder Army&lt;/a&gt;
+  </pre>
+
+  <h2>7. Image Tag</h2>
+  <p>The <code>&lt;img&gt;</code> tag embeds images. Attributes: <b>src</b> (path/URL) and <b>alt</b> (description).</p>
+  <pre>
+&lt;img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg"
+     alt="Beagle Dog" width="400"&gt;
+  </pre>
+  <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" alt="Beagle Dog" width="400">
+
+   <h2>🎯 Task: Combine Image & Anchor</h2>
+  <p>Clicking on the image below will open the official Visual Studio Code website:</p>
+
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">
+    <img src="https://code.visualstudio.com/assets/images/code-stable.png"
+         alt="Visual Studio Code Logo" width="300">
+  </a>
+  <br><br>
+<p><i>Tip:</i> Wrap an <code>&lt;img&gt;</code> tag inside an <code>&lt;a&gt;</code> tag to make the image clickable.</p>
+  <h2>📚 References</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener">W3Schools: Introduction to HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank" rel="noopener">MDN: Introduction to HTML</a></li>
+    <li><a href="https://youtu.be/GkZN_-HMCJ8?si=7OhgQR2Tzy1DSKCc" target="_blank" rel="noopener">HTML Course for Beginners (YouTube)</a></li>
+  </ul>
+  <footer>
+    <hr>
+    <p>&copy; 2025 My Study Notes</p>
+  </footer>
+</body>
+</html>

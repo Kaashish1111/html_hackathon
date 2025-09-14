@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 2 - HTML Lists and Tables</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+    <a href="index.html">Home</a> |
+    <a href="lecture1.html"> ⏮ Prev</a>  |
+    <a href="lecture3.html">Next ⏭</a>
+  </nav>
+  <hr>
+
+
+    <h1>Lecture 2: HTML Lists and Tables</h1>
+    <p>
+        In this lecture, we will learn how to create <b>lists</b> and <b>tables</b> in HTML.
+        Lists help organize data in ordered or unordered ways, and tables
+        let us present data in rows and columns.
+    </p>
+<hr>
+<hr>
+    <h2>1. HTML Lists</h2>
+    <p>An HTML List allows you to organize data on web pages into an ordered or unordered format to make the information easier to read and visually appealing. HTML Lists are very helpful for creating structured, accessible content in web development.</p>
+
+    <b><p>There are 3 types of lists:</p></b>
+    <ul>
+        <li>Unordered List (<code>&lt;ul&gt;</code>)</li>
+        <li>Ordered List (<code>&lt;ol&gt;</code>)</li>
+        <li>Description List (<code>&lt;dl&gt;</code>)</li>
+    </ul>
+    <br>
+    <hr>
+    <h3>Unordered List (&lt;ul&gt;)</h3>
+
+    <p>
+        An <b>unordered list</b> is a collection of items where the <b>order does not matter</b>.
+        Each item is marked with a <b>bullet point</b> by default.
+        Use the <code>&lt;ul&gt;</code> tag to create the list, and wrap each item in an <code>&lt;li&gt;</code> tag.
+    </p>
+
+    <h4>Syntax:</h4>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+    <h4>Example:</h4>
+    <pre>
+&lt;ul&gt;
+   &lt;li&gt;Bread&lt;/li&gt;
+   &lt;li&gt;Eggs&lt;/li&gt;
+   &lt;li&gt;Milk&lt;/li&gt;
+   &lt;li&gt;Coffee&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+
+    <p><b>Output:</b></p>
+    <ul>
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+    </ul>
+<b><hr></b>
+<h3>Ordered List (&lt;ol&gt;)</h3>
+
+<p>
+    An <b>ordered list</b> is a collection of items where the <b>order matters</b>.
+    Each item is <b>numbered automatically</b> by default.
+    Use the <code>&lt;ol&gt;</code> tag to create the list, and wrap each item in an <code>&lt;li&gt;</code> tag.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;ol&gt;
+   &lt;li&gt;HTML&lt;/li&gt;
+   &lt;li&gt;CSS&lt;/li&gt;
+   &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+
+<h4>Example with Attributes:</h4>
+<pre>
+&lt;ol type="i" start="5" reversed&gt;
+   &lt;li&gt;HTML&lt;/li&gt;
+   &lt;li&gt;CSS&lt;/li&gt;
+   &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<ol type="i" start="5" reversed>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+<hr>
+<h3>Description List (&lt;dl&gt;)</h3>
+
+<p>
+    A <b>description list</b> is used to define <b>terms and their descriptions</b>.
+    Use the <code>&lt;dl&gt;</code> tag to create the list. Each term is wrapped in a <code>&lt;dt&gt;</code> tag,
+    and its description is wrapped in a <code>&lt;dd&gt;</code> tag.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;dl&gt;
+    &lt;dt&gt;Term 1&lt;/dt&gt;
+    &lt;dd&gt;Description of Term 1&lt;/dd&gt;
+    &lt;dt&gt;Term 2&lt;/dt&gt;
+    &lt;dd&gt;Description of Term 2&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;dl&gt;
+   &lt;dt&gt;Coffee&lt;/dt&gt;
+   &lt;dd&gt;- 500 gms&lt;/dd&gt;
+   &lt;dt&gt;Milk&lt;/dt&gt;
+   &lt;dd&gt;- 1 ltr Tetra Pack&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<dl>
+    <dt>Coffee</dt>
+    <dd>- 500 gms</dd>
+    <dt>Milk</dt>
+    <dd>- 1 ltr Tetra Pack</dd>
+</dl>
+<hr>
+<hr>
+<h2>2. HTML Tables</h2>
+
+<p>
+    HTML (HyperText Markup Language) tables are used to display data in rows and columns.
+    Tables help organize information clearly on a web page.
+</p>
+
+<b><p>Basic table tags:</p></b>
+<ul>
+    <li><code>&lt;table&gt;</code>: Defines the table</li>
+    <li><code>&lt;tr&gt;</code>: Defines a table row</li>
+    <li><code>&lt;th&gt;</code>: Defines a table header cell</li>
+    <li><code>&lt;td&gt;</code>: Defines a table data cell</li>
+    <li><code>&lt;caption&gt;</code>: Adds a title or caption to the table</li>
+    <li><code>&lt;thead&gt;</code>: Defines the table header section</li>
+    <li><code>&lt;tbody&gt;</code>: Defines the table body section</li>
+    <li><code>&lt;tfoot&gt;</code>: Defines the table footer section</li>
+</ul>
+<hr>
+<h3>HTML Table (&lt;table&gt;)</h3>
+
+<p>
+    An <b>HTML table</b> is used to display data in a <b>row and column format</b>.
+    It is created using the <code>&lt;table&gt;</code> tag.
+    Inside a table, rows are defined with <code>&lt;tr&gt;</code> (table row),
+    header cells with <code>&lt;th&gt;</code>, and data cells with <code>&lt;td&gt;</code>.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;City&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Kashish&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+      &lt;td&gt;Patiala&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Arjun&lt;/td&gt;
+      &lt;td&gt;20&lt;/td&gt;
+      &lt;td&gt;Delhi&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+   </tr>
+   <tr>
+      <td>Kashish</td>
+      <td>19</td>
+      <td>Patiala</td>
+   </tr>
+   <tr>
+      <td>Arjun</td>
+      <td>20</td>
+      <td>Delhi</td>
+   </tr>
+</table>
+<hr>
+<h3>Table Row (&lt;tr&gt;)</h3>
+
+<p>
+    The <code>&lt;tr&gt;</code> tag in HTML defines a <b>row</b> inside a table.
+    Each row contains one or more <code>&lt;th&gt;</code> (table header) or <code>&lt;td&gt;</code> (table data) cells.
+    You must place <code>&lt;tr&gt;</code> tags inside a <code>&lt;table&gt;</code>.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Apple&lt;/td&gt;
+      &lt;td&gt;Red&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Banana&lt;/td&gt;
+      &lt;td&gt;Yellow&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <tr>
+      <td>Apple</td>
+      <td>Red</td>
+   </tr>
+   <tr>
+      <td>Banana</td>
+      <td>Yellow</td>
+   </tr>
+</table>
+<hr>
+<h3>Table Header (&lt;th&gt;)</h3>
+
+<p>
+    The <code>&lt;th&gt;</code> tag in HTML defines a <b>header cell</b> inside a table.
+    Header cells are usually displayed in <b>bold text</b> and centered by default.
+    Use <code>&lt;th&gt;</code> inside a <code>&lt;tr&gt;</code> (table row) to represent column headings.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Heading 1&lt;/th&gt;
+        &lt;th&gt;Heading 2&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Fruit&lt;/th&gt;
+      &lt;th&gt;Color&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Apple&lt;/td&gt;
+      &lt;td&gt;Red&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Banana&lt;/td&gt;
+      &lt;td&gt;Yellow&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <tr>
+      <th>Fruit</th>
+      <th>Color</th>
+   </tr>
+   <tr>
+      <td>Apple</td>
+      <td>Red</td>
+   </tr>
+   <tr>
+      <td>Banana</td>
+      <td>Yellow</td>
+   </tr>
+</table>
+<hr>
+<h3>Table Data (&lt;td&gt;)</h3>
+
+<p>
+    The <code>&lt;td&gt;</code> tag in HTML defines a <b>standard data cell</b> inside a table.
+    It is used to display the actual <b>content</b> of the table (like text, numbers, or images).
+    Each <code>&lt;td&gt;</code> must be placed inside a <code>&lt;tr&gt;</code> (table row).
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Fruit&lt;/th&gt;
+      &lt;th&gt;Color&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Apple&lt;/td&gt;
+      &lt;td&gt;Red&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Banana&lt;/td&gt;
+      &lt;td&gt;Yellow&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <tr>
+      <th>Fruit</th>
+      <th>Color</th>
+   </tr>
+   <tr>
+      <td>Apple</td>
+      <td>Red</td>
+   </tr>
+   <tr>
+      <td>Banana</td>
+      <td>Yellow</td>
+   </tr>
+</table>
+<hr>
+<h3>Table Caption (&lt;caption&gt;)</h3>
+
+<p>
+    The <code>&lt;caption&gt;</code> tag is used to add a <b>title or heading</b> for a table.
+    It helps describe the content of the table and usually appears <b>above the table</b> by default.
+    It must be placed immediately after the opening <code>&lt;table&gt;</code> tag.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+   &lt;caption&gt;Table Title&lt;/caption&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Heading 1&lt;/th&gt;
+      &lt;th&gt;Heading 2&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;caption&gt;Fruit and Their Colors&lt;/caption&gt;
+   &lt;tr&gt;
+      &lt;th&gt;Fruit&lt;/th&gt;
+      &lt;th&gt;Color&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Apple&lt;/td&gt;
+      &lt;td&gt;Red&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Banana&lt;/td&gt;
+      &lt;td&gt;Yellow&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <caption>Fruit and colors</caption>
+   <tr>
+      <th>Fruit</th>
+      <th>Color</th>
+   </tr>
+   <tr>
+      <td>Apple</td>
+      <td>Red</td>
+   </tr>
+   <tr>
+      <td>Banana</td>
+      <td>Yellow</td>
+   </tr>
+</table>
+
+<hr>
+<h3>Table Head (&lt;thead&gt;)</h3>
+
+<p>
+    The <code>&lt;thead&gt;</code> tag is used to group the <b>header content</b> of a table.
+    It contains one or more <code>&lt;tr&gt;</code> (table rows) with <code>&lt;th&gt;</code> (header cells).
+    It helps keep the table organized and makes it easier for browsers, screen readers, and styling.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+   &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;th&gt;Heading 1&lt;/th&gt;
+         &lt;th&gt;Heading 2&lt;/th&gt;
+      &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Data 1&lt;/td&gt;
+         &lt;td&gt;Data 2&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;caption&gt;Student Marks&lt;/caption&gt;
+   &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;th&gt;Name&lt;/th&gt;
+         &lt;th&gt;Subject&lt;/th&gt;
+         &lt;th&gt;Marks&lt;/th&gt;
+      &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Amit&lt;/td&gt;
+         &lt;td&gt;Math&lt;/td&gt;
+         &lt;td&gt;85&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Sita&lt;/td&gt;
+         &lt;td&gt;Science&lt;/td&gt;
+         &lt;td&gt;92&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <caption>Student Marks</caption>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Subject</th>
+         <th>Marks</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Amit</td>
+         <td>Math</td>
+         <td>85</td>
+      </tr>
+      <tr>
+         <td>Sita</td>
+         <td>Science</td>
+         <td>92</td>
+      </tr>
+   </tbody>
+</table>
+<hr>
+<h3>Table Body (&lt;tbody&gt;)</h3>
+
+<p>
+    The <code>&lt;tbody&gt;</code> tag is used to group the <b>main content (data rows)</b> of a table.
+    It contains one or more <code>&lt;tr&gt;</code> (table rows) with <code>&lt;td&gt;</code> (data cells).
+    By separating <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code>,
+    the table becomes more structured and easier to manage.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+   &lt;thead&gt;...&lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Data 1&lt;/td&gt;
+         &lt;td&gt;Data 2&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;caption&gt;Employee Details&lt;/caption&gt;
+   &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;th&gt;Name&lt;/th&gt;
+         &lt;th&gt;Position&lt;/th&gt;
+      &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Ravi&lt;/td&gt;
+         &lt;td&gt;Developer&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Meera&lt;/td&gt;
+         &lt;td&gt;Designer&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <caption>Employee Details</caption>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Position</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Ravi</td>
+         <td>Developer</td>
+      </tr>
+      <tr>
+         <td>Meera</td>
+         <td>Designer</td>
+      </tr>
+   </tbody>
+</table>
+<hr>
+<h3>Table Footer (&lt;tfoot&gt;)</h3>
+
+<p>
+    The <code>&lt;tfoot&gt;</code> tag is used to group the <b>footer content</b> of a table.
+    It usually contains summary rows, totals, or notes about the data.
+    Even though it appears at the bottom of the table visually,
+    it can be placed before <code>&lt;tbody&gt;</code> in the code for faster rendering.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;table&gt;
+   &lt;thead&gt;...&lt;/thead&gt;
+   &lt;tbody&gt;...&lt;/tbody&gt;
+   &lt;tfoot&gt;
+      &lt;tr&gt;
+         &lt;td colspan="2"&gt;Summary&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;table border="1"&gt;
+   &lt;caption&gt;Monthly Expenses&lt;/caption&gt;
+   &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;th&gt;Category&lt;/th&gt;
+         &lt;th&gt;Amount&lt;/th&gt;
+      &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Food&lt;/td&gt;
+         &lt;td&gt;$200&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+         &lt;td&gt;Transport&lt;/td&gt;
+         &lt;td&gt;$100&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+   &lt;tfoot&gt;
+      &lt;tr&gt;
+         &lt;td&gt;<b>Total</b>&lt;/td&gt;
+         &lt;td&gt;<b>$300</b>&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<table border="1">
+   <caption>Monthly Expenses</caption>
+   <thead>
+      <tr>
+         <th>Category</th>
+         <th>Amount</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Food</td>
+         <td>$200</td>
+      </tr>
+      <tr>
+         <td>Transport</td>
+         <td>$100</td>
+      </tr>
+   </tbody>
+   <tfoot>
+      <tr>
+         <td><b>Total</b></td>
+         <td><b>$300</b></td>
+      </tr>
+   </tfoot>
+</table>
+<hr>
+<h3>Task: Using Lists and Tables Together</h3>
+
+<p>
+👉 Create a list of your favorite <b>3 subjects</b>.
+For each subject, also make a <b>table</b> showing at least 2 topics you study in that subject.
+</p>
+
+<h4>Example Structure (not the full answer):</h4>
+<pre>
+&lt;ul&gt;
+   &lt;li&gt;Mathematics
+      &lt;table border="1"&gt;
+         &lt;tr&gt;
+            &lt;th&gt;Topic&lt;/th&gt;
+            &lt;th&gt;Difficulty&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Algebra&lt;/td&gt;
+            &lt;td&gt;Medium&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Geometry&lt;/td&gt;
+            &lt;td&gt;Hard&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/li&gt;
+
+   &lt;li&gt;Science
+      (Make another table here)
+   &lt;/li&gt;
+
+   &lt;li&gt;English
+      (Make another table here)
+   &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<hr>
+ <h2>📚 References</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener">W3Schools: Introduction to HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank" rel="noopener">MDN: Introduction to HTML</a></li>
+    <li><a href="https://youtu.be/AJ4E1zf5tQs?si=YuNfKIslZ-4RUyN-" target="_blank" rel="noopener">HTML Course for Beginners (YouTube)</a></li>
+  </ul>
+  <footer>
+    <hr>
+    <p>&copy; 2025 My Study Notes</p>
+  </footer>
+</body>
+</html>

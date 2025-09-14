@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture3</title>
+</head>
+<body>
+<!-- Navigation -->
+    <nav>
+    <a href="index.html">Home</a> |
+    <a href="lecture2.html"> ⏮ Prev</a>  |
+    <a href="lecture4.html">Next ⏭</a>
+  </nav>
+
+  <hr>
+
+<h1>Lecture 3: HTML Boilerplate, File Paths, Class, ID, and Div</h1>
+    <p>
+        In this lecture, we will learn about<b>File Paths</b> , <b> HTML Boilerplate</b>and <b>Class, Div, ID</b> in HTML.
+        1. HTML Boilerplate: The basic structure of an HTML document, including the doctype declaration, html, head, and body tags.
+        2. File Paths: The way to specify the location of files (like images, stylesheets, etc.) in relation to the HTML file.
+        3. Class: A way to group multiple elements together for styling or scripting purposes.
+    </p>
+<hr>
+<hr>
+<h2>1. File Paths in HTML</h2>
+<p>
+A <b>file path</b> tells the browser where to find a file (like an image, CSS, video, or another HTML page).
+File paths are very important because they decide how your project links to its resources.
+</p>
+
+<b><p>There are 2 main types of file paths:</p></b>
+<ul>
+    <li><b>Absolute Path</b> – the complete URL of the file (e.g., https://example.com/images/logo.png)</li>
+    <li><b>Relative Path</b> – the location of the file <b>relative to your current HTML file</b></li>
+</ul>
+<br>
+<hr>
+<h3>Absolute Path</h3>
+
+<p>
+An <b>absolute path</b> gives the <b>complete location</b> of a file or resource.
+It usually starts with <code>http://</code>, <code>https://</code>, or the root directory.
+This path will always point to the same place, no matter where the HTML file is located.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;img src="https://www.example.com/images/picture.jpg" alt="Example Image"&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg"
+     alt="Beagle Dog"&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg"
+     alt="Beagle Dog" width="400">
+<hr>
+<h3>Relative Path</h3>
+
+<p>
+A <b>relative path</b> specifies the location of a file <b>relative to the current HTML file</b>.
+Instead of writing the full URL, you only write the path starting from your project folder.
+Relative paths are commonly used when files (like images, CSS, or JS) are stored in the same project directory.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;img src="images/picture.jpg" alt="Relative Example"&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;img src="images/sample.jpg" alt="Sample Image"&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<img src="./images/design3.png" alt="Sample Image" width="400">
+
+<p><b>Explanation Diagram:</b></p>
+<a href="https://youtu.be/k78lNSAB8VY?si=-PDZ-5un4-0ep1Ip" target="_blank" rel="noopener"><img src="./images/relative.png"
+     alt="Relative Path Example Diagram" width="500">
+     <p>click on the pic</p></a>
+<hr>
+<hr>
+<h2>2. HTML Boilerplate</h2>
+<p>
+An <b>HTML Boilerplate</b> is the <b>basic structure of any HTML document</b>.
+It includes the required tags that every HTML page must have in order to work properly in a browser.
+Think of it as a <i>starter template</i> for your web pages.
+</p>
+
+<b><p>The main parts of an HTML Boilerplate are:</p></b>
+<ul>
+    <li><b>&lt;!DOCTYPE html&gt;</b> – Defines the document type and HTML version.</li>
+    <li><b>&lt;html&gt;</b> – The root element of the page.</li>
+    <li><b>&lt;head&gt;</b> – Contains metadata (like title, charset, viewport).</li>
+    <li><b>&lt;title&gt;</b> – Sets the title of the page (seen on the browser tab).</li>
+    <li><b>&lt;body&gt;</b> – Holds all the visible content (text, images, links, etc.).</li>
+</ul>
+<br>
+<hr>
+<h3>&lt;!DOCTYPE html&gt;</h3>
+
+<p>
+The <b>&lt;!DOCTYPE html&gt;</b> declaration defines the <b>document type</b> and version of HTML.
+In modern web development, it tells the browser that the page is written in <b>HTML5</b>.
+It is always written at the very top of the HTML document.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;!DOCTYPE html&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;!DOCTYPE html&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<p>(No visible output — it just instructs the browser.)</p>
+
+<hr>
+
+<h3>&lt;html&gt;</h3>
+
+<p>
+The <b>&lt;html&gt;</b> tag is the <b>root element</b> of an HTML page.
+It wraps all the content, including the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections.
+Every HTML document starts with this tag.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;html&gt;
+   ... content ...
+&lt;/html&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;html&gt;
+   &lt;head&gt;&lt;/head&gt;
+   &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<p>(No direct output — but the page won’t work without it.)</p>
+
+<hr>
+
+<h3>&lt;head&gt;</h3>
+
+<p>
+The <b>&lt;head&gt;</b> element contains <b>metadata</b> about the document.
+This includes the <code>&lt;title&gt;</code>, character encoding, viewport settings, and links to CSS or JavaScript.
+Content inside <code>&lt;head&gt;</code> is not displayed on the page.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;head&gt;
+   &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;head&gt;
+   &lt;meta charset="UTF-8"&gt;
+   &lt;title&gt;Welcome Page&lt;/title&gt;
+&lt;/head&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<p>(Only the title will show up in the browser tab.)</p>
+
+<hr>
+
+<h3>&lt;title&gt;</h3>
+
+<p>
+The <b>&lt;title&gt;</b> tag sets the <b>title of the webpage</b>, which appears in the browser’s tab or window.
+It is always placed inside the <code>&lt;head&gt;</code> element.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;title&gt;Page Title&lt;/title&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;head&gt;
+   &lt;title&gt;My First Website&lt;/title&gt;
+&lt;/head&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<p>(Shows “My First Website” in the browser tab.)</p>
+
+<hr>
+
+<h3>&lt;body&gt;</h3>
+
+<p>
+The <b>&lt;body&gt;</b> tag contains all the <b>visible content</b> of a webpage, such as headings, paragraphs, images, links, lists, and tables.
+Anything inside the <code>&lt;body&gt;</code> is shown in the browser window.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;body&gt;
+   ... visible content ...
+&lt;/body&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;body&gt;
+   &lt;h1&gt;Welcome!&lt;/h1&gt;
+   &lt;p&gt;This is my first web page.&lt;/p&gt;
+&lt;/body&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<h1>Welcome!</h1>
+<p>This is my first web page.</p>
+<hr>
+<h2>2. div, class, and id in HTML</h2>
+<p>
+In HTML, <b>&lt;div&gt;</b>, <b>class</b>, and <b>id</b> are used to group and style content.
+They are very important when designing layouts and applying CSS or JavaScript.
+</p>
+
+<b><p>Key points:</p></b>
+<ul>
+    <li><b>&lt;div&gt;</b> – A generic container (block-level element) used to group elements.</li>
+    <li><b>class</b> – Used to apply the same style to <b>multiple elements</b>.</li>
+    <li><b>id</b> – A unique identifier for a <b>single element</b>.</li>
+</ul>
+<br>
+<hr>
+
+<h3>1. &lt;div&gt; Tag</h3>
+<p>
+The <b>&lt;div&gt;</b> tag is a container that groups content together.
+It doesn’t have any special meaning by itself but is widely used for layout and design.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;div&gt;
+    Content goes here
+&lt;/div&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;div&gt;
+    &lt;p&gt;This is inside a div&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<div style="border:1px solid black; padding:10px; width:200px;">
+    <p>This is inside a div</p>
+</div>
+
+<hr>
+
+<h3>2. class Attribute</h3>
+<p>
+The <b>class</b> attribute lets you apply the <b>same CSS style</b> to multiple elements.
+Classes can be reused across your page.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;tag class="classname"&gt;Content&lt;/tag&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;style&gt;
+    .highlight { color: red; font-weight: bold; }
+&lt;/style&gt;
+
+&lt;p class="highlight"&gt;This text is red&lt;/p&gt;
+&lt;div class="highlight"&gt;This box text is also red&lt;/div&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<style>
+    .highlight { color: red; font-weight: bold; }
+</style>
+<p class="highlight">This text is red</p>
+<div class="highlight">This box text is also red</div>
+
+<hr>
+
+<h3>3. id Attribute</h3>
+<p>
+The <b>id</b> attribute is used to uniquely identify <b>one element</b> on a page.
+It must be unique and is often used for JavaScript and CSS targeting.
+</p>
+
+<h4>Syntax:</h4>
+<pre>
+&lt;tag id="uniqueID"&gt;Content&lt;/tag&gt;
+</pre>
+
+<h4>Example:</h4>
+<pre>
+&lt;style&gt;
+    #special { background-color: yellow; padding: 5px; }
+&lt;/style&gt;
+
+&lt;p id="special"&gt;This text has a yellow background&lt;/p&gt;
+</pre>
+
+<p><b>Output:</b></p>
+<style>
+    #special { background-color: yellow; padding: 5px; }
+</style>
+<p id="special">This text has a yellow background</p>
+<hr> <h2>Lecture 3 Task: Using File Paths, Divs, Class, and ID</h2> <p>Create a simple webpage to practice what you learned in this lecture.</p> <h3>Task Instructions:</h3> <ol> <li>Create an HTML file using the HTML boilerplate.</li> <li>Add a header section inside a <code>&lt;div&gt;</code> with <code>class="header"</code> and include a logo image using a <b>relative path</b>.</li> <li>Add a main content section inside a <code>&lt;div&gt;</code> with <code>id="main"</code> and include:</li> <ul> <li>A short paragraph about yourself.</li> <li>An unordered list of 3 hobbies or interests.</li> </ul> <li>Add a footer section inside a <code>&lt;div&gt;</code> with <code>class="footer"</code> containing your contact information.</li> <li>Use proper <code>class</code> and <code>id</code> attributes as described in the lecture.</li> </ol> <h3>Hints:</h3> <ul> <li>Use <code>&lt;img src="images/logo.png"&gt;</code> for relative image path (create an <code>images</code> folder in your project).</li> <li>Do not use any CSS for now; just focus on HTML structure.</li> <li>Use <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> for listing your hobbies.</li> </ul>
+<hr>
+<h2>📚 References</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener">W3Schools: Introduction to HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank" rel="noopener">MDN: Introduction to HTML</a></li>
+    <li><a href="https://youtu.be/k78lNSAB8VY?si=bpOEnJgp9uaucpHc" target="_blank" rel="noopener">HTML Course for Beginners (YouTube)</a></li>
+  </ul>
+  <footer>
+    <hr>
+    <p>&copy; 2025 My Study Notes</p>
+  </footer>
+</body>
+</html>
